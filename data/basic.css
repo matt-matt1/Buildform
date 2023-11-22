@@ -1,0 +1,17 @@
+/** {
+	padding: 0;
+	margin: 0;
+}*/
+.form_field {
+background: #eee;
+margin-bottom: 0.5em;
+padding: 0.5em;
+}
+.form_field input {
+font-size: 20px;
+padding: 0.5em 1em;
+}
+.description {
+font-style: italic;
+margin-left: 0.5em;
+}

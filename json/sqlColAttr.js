@@ -1,0 +1,14 @@
+const sqlColAttr = [
+	{
+		"text": "binary",
+		"value": "BINARY"
+	},
+	{
+		"text": "unsigned",
+		"value": "UNSIGNED"
+	},
+	{
+		"text": "unsigned zerofill",
+		"value": "ZEROFILL"
+	}
+];

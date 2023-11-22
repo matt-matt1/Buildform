@@ -1,0 +1,88 @@
+
+#return-to-top {
+	color: #bbb;
+	position: fixed !important;
+	top: 65%;
+	right: 2%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	border: 2px solid #ddd;
+	background: #bbb;
+	-webkit-box-shadow: 0 0 0 3px #fff, 0 5px 5px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0 0 0 3px #fff, 0 5px 5px rgba(0,0,0,0.8);
+	-ms-box-shadow: 0 0 0 3px #fff, 0 5px 5px rgba(0,0,0,0.8);
+	-o-box-shadow: 0 0 0 3px #fff, 0 5px 5px rgba(0,0,0,0.8);
+	box-shadow: 0 0 0 3px #fff, 0 5px 5px rgba(0,0,0,0.8);
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#return-to-top:before {
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background: rgba(0,0,0,0.1);
+}
+#return-to-top .fa-solid {
+	font-size: 50px;
+	position: absolute;
+	/*top: 50%;*/
+	top: 85%;
+	/*left: 50%;*/
+	left: 55%;
+	transform: translate(-50%, -50%);
+	color: #555;
+	/**/border: none;/**/
+	height: 150%;
+	width: 150%;
+}
+#return-to-top:hover {
+	border-color: rgb(73, 122, 255);
+	background: #00456f;
+	transform: scale(1.1);
+}
+#return-to-top:hover .fa-solid {
+	color: rgb(73, 122, 255);
+	animation: moveup 1.5s linear infinite;
+}
+@keyframes moveup
+{
+	0%
+	{
+		top: 85%;/*60*/
+	}
+	40%
+	{
+		top: 85%;/*60*/
+	}
+	60%
+	{
+		top: 75%;/*50*/
+	}
+	80%
+	{
+		top: 62%;/*40*/
+	}
+	100%
+	{
+		top: 50%;/*30*/
+	}
+}
+
+.scroll-progress {
+	height: 3px;
+	background-color: purple;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}

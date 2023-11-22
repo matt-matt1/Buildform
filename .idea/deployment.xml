@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Rasp">
+    <serverData>
+      <paths name="Rasp">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/BuildForm" local="$PROJECT_DIR$" web="/Buildform" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

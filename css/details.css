@@ -1,0 +1,28 @@
+details > summary {
+	padding: 0.5em 1em;
+	cursor: pointer;
+	border: none;
+/*	border-top: 1px solid #ddd;*/
+	margin-bottom: 1em;
+/*  padding: 4px;
+  width: 200px;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;*/
+	-webkit-transition: 750ms;
+	-moz-transition: 750ms;
+	-ms-transition: 750ms;
+	-o-transition: 750ms;
+	transition: 750ms;
+}
+/*details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}*/
+details > summary:hover {
+	text-shadow: 0 0 0.75em yellow;
+	font-style: italic;
+}

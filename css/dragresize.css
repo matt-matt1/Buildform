@@ -1,0 +1,108 @@
+/* Apply the element you want to drag/resize */
+.drsElement {
+	position: absolute;
+	border: 1px solid #333;
+}
+
+/*
+	The main mouse handle that moves the whole element.
+	You can apply to the same tag as drsElement if you want.
+*/
+.drsMoveHandle {
+/*	height: 20px;*/
+/* background-color: #CCC;*/
+	border-bottom: 1px solid #666;
+	cursor: move;
+}
+
+/*
+	The DragResize object name is automatically applied to all generated
+	corner resize handles, as well as one of the individual classes below.
+*/
+.dragresize {
+	position: absolute;
+/*	width: 5px;
+	height: 5px;*/
+	width: 8px;
+	height: 8px;
+	font-size: 1px;
+	background: #EEE;
+	/*border: 1px solid #333;*/
+	border: 1px solid darkgray;
+}
+.dragresize:hover {
+/*	width: 12px; / *!important;* /
+	height: 12px;*/
+/*	border-color: blue;*/
+	background-color: orangered;
+}
+
+/*
+	Individual corner classes - required for resize support.
+	These are based on the object name plus the handle ID.
+*/
+.dragresize-tl {
+/*	top: -8px;
+	left: -8px;*/
+	top: -10px;
+	left: -10px;
+	cursor: nw-resize;
+}
+.dragresize-tm {
+/*	top: -8px;*/
+	left: 50%;
+	top: -10px;
+/*	margin-left: -4px;*/
+	margin-left: -5px;
+	cursor: n-resize;
+}
+.dragresize-tr {
+/*	top: -8px;
+	right: -8px;*/
+	top: -10px;
+	right: -10px;
+	cursor: ne-resize;
+}
+
+.dragresize-ml {
+	top: 50%;
+/*	margin-top: -4px;
+	left: -8px;*/
+	margin-top: -5px;
+	left: -10px;
+	cursor: w-resize;
+}
+.dragresize-mr {
+	top: 50%;
+/*	margin-top: -4px;
+	right: -8px;*/
+	margin-top: -5px;
+	right: -10px;
+	cursor: e-resize;
+}
+
+.dragresize-bl {
+	bottom: -8px;
+	left: -8px;
+	cursor: sw-resize;
+}
+.dragresize-bm {
+/*	bottom: -8px;*/
+	bottom: -10px;
+	left: 50%;
+/*	margin-left: -4px;*/
+	margin-left: -5px;
+	cursor: s-resize;
+}
+.dragresize-br {
+/*	bottom: -8px;
+	right: -8px;*/
+	bottom: -10px;
+	right: -10px;
+	cursor: url('../img/cursor/se-resize.png'), se-resize;/* url('image-path.png') */
+}
+/*.dragresize-br:hover::after {*/
+/*.dragresize-br::after {
+	content: '↘';
+	font-size: 10em;
+}*/

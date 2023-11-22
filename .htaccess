@@ -1,0 +1,27 @@
+Options +SymLinksIfOwnerMatch
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /BuildForm/
+#	RewriteCond %{REQUEST_FILENAME} !-f
+#	RewriteCond %{REQUEST_FILENAME} !-d
+#	RewriteRule ^(.*)$ index.php?url=$2 [QSA,L]
+
+	# Wordpress:
+#	RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+##	RewriteBase /
+#	RewriteRule ^index\.php$ - [L]
+#	RewriteCond %{REQUEST_FILENAME} !-f
+#	RewriteCond %{REQUEST_FILENAME} !-d
+#	#RewriteRule . /index.php [L]
+#	RewriteRule . index.php [L]
+
+#	RewriteRule ^$ index.php?/ [QSA,L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule (.*) index.php?/$2 [QSA,L]
+
+#	Options +FollowSymLinks
+	#RewriteCond %{REQUEST_FILENAME} !-l
+	#RewriteRule ^(.+)$ index.php [QSA,L,NC]
+
+</IfModule>

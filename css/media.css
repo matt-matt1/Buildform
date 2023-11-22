@@ -1,0 +1,88 @@
+/*
+@media screen and (min-width:1601px) and (max-width:3600px) {
+	.panel {
+		min-windth: 1500px;
+	}
+}
+*/
+/* bootstrap - https://getbootstrap.com/docs/5.0/layout/grid/ */
+@media screen and (min-width: 1400px) {	/* col-xxl- */
+/*	.panel {
+		min-width: 1320px;
+	}*/
+}
+@media screen and (min-width: 1200px) and (max-width: 1401px) {	/* col-xl- */
+/*	.panel {
+		min-width: 1140px;
+	}*/
+}
+@media screen and (min-width: 992px) and (max-width: 1201px) {	/* col-lg- */
+/*	.panel {
+		min-width: 960px;
+	}*/
+}
+@media screen and (min-width: 768px) and (max-width: 993px) {	/* col-md- */
+/*	.panel {
+		min-width: 720px;
+	}*/
+}
+@media screen and (min-width: 576px) and (max-width: 769px) {	/* col-sm- */
+/*	.panel {
+		min-width: 540px;
+	}*/
+}
+@media screen and (min-width: 576px) and (max-width: 577px) {	/* xs: col- */
+/*	.panel {
+		min-width: 0;
+	}*/
+}
+
+@media screen and (min-width: 2001px) and (max-width: 3000px) {
+	.panel {
+		min-width: 1950px;
+	}
+}
+@media screen and (min-width: 1001px) and (max-width: 2000px) {
+	.panel {
+		min-width: 950px;
+	}
+}
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+	.panel {
+		min-width: 550px;
+    }
+}
+@media screen and (max-width: 500px) {
+	.panel {
+		min-width: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+	ul li.right,
+	ul li {
+		float: none;
+	}
+}
+​
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+
+  div.content {margin-left: 0;}
+}
+​
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+}

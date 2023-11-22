@@ -1,0 +1,114 @@
+.bgblink:not(:placeholder-shown), input.error:not(:placeholder-shown)/*, input:invalid*/ {/*:not(:placeholder-shown)*/
+	-webkit-animation: bgblink-animation 1.2s infinite;
+	-moz-animation: bgblink-animation 1.2s infinite;
+	-o-animation: bgblink-animation 1.2s infinite;
+	animation: bgblink-animation 1.2s infinite;/*steps(5, start) */
+/*	animation-direction: alternate;*/
+}
+@keyframes bgblink-animation {
+	0% {
+/*		background-color: #fff;*/
+		box-shadow: none;
+	}
+	50% {
+/*		visibility: hidden;*/
+/*		background-color: lightcoral;*/
+		box-shadow: 0 0 15px red;
+    }
+	100% {
+/*		background-color: #fff;*/
+		box-shadow: none;
+	}
+}
+@-webkit-keyframes bgblink-animation {
+	0% {
+/*		background-color: #fff;*/
+		box-shadow: none;
+	}
+	50% {
+/*		visibility: hidden;*/
+/*		background-color: lightcoral;*/
+		/*box-shadow: 0 0 5px lightcoral;*/
+		box-shadow: 0 0 15px red;
+    }
+	100% {
+/*		background-color: #fff;*/
+		box-shadow: none;
+	}
+}
+.lblblink, label.error/*, label:invalid*/ {
+	-webkit-animation: lblblink-animation 1s infinite;
+	-moz-animation: lblblink-animation 1s infinite;
+	-o-animation: lblblink-animation 1s infinite;
+	animation: lblblink-animation 1s infinite;/*steps(5, start) */
+/*	animation-direction: alternate;*/
+}
+@keyframes lblblink-animation {
+	0% {
+/*		background-color: #fff;*/
+/*		text-shadow: none;*/
+		text-decoration: none;
+	}
+	50% {
+/*		visibility: hidden;*/
+/*		background-color: lightcoral;*/
+/*		text-shadow: 0 0 15px red;*/
+		text-decoration: underline;
+    }
+	100% {
+/*		background-color: #fff;*/
+/*		text-shadow: none;*/
+		text-decoration: none;
+	}
+}
+@-webkit-keyframes lblblink-animation {
+	0% {
+/*		background-color: #fff;*/
+/*		text-shadow: none;*/
+		text-decoration: none;
+	}
+	50% {
+/*		visibility: hidden;*/
+/*		background-color: lightcoral;*/
+		/*box-shadow: 0 0 5px lightcoral;*/
+/*		text-shadow: 0 0 15px red;*/
+		text-decoration: underline;
+    }
+	100% {
+/*		background-color: #fff;*/
+/*		text-shadow: none;*/
+		text-decoration: none;
+	}
+}
+.invalid-note::after {
+	content: "";
+	border: 1em solid transparent;
+/*	border-bottom-color: red;*/
+	border-bottom-color: #333;
+	border-top: 0;
+/*	position: relative;*/
+	position: absolute;
+/*	display: grid;
+	justify: center;*/
+	top: -1em;
+	left: 50%;
+	margin-left: -1em;
+}
+.invalid-note {
+	/*font-size: 1em;*/
+	background-color: #333;
+	color: #ccc;
+	border-radius: 10px;
+	padding: 1em 2em;/* 1em 0.75em;*/
+/*	margin: 0.5em auto;*/
+	position: relative;
+	/*max-width: 320px;*/
+}
+.note-container {
+	text-align: center;
+    margin: 0.5em auto;
+    width: auto !important;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}

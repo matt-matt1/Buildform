@@ -1,0 +1,7 @@
+.horz li {
+	display: inline-flex;
+}
+.horz li + li:before {
+	content: '|';
+	margin: 0 1em;
+}

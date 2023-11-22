@@ -1,0 +1,84 @@
+/* model/note */
+.note {
+	min-width: 300px;/*20%;*/
+	min-height: 200px;/*10%;*/
+	padding: 10px;
+	box-shadow: 0 0 25px 5px #ddd;
+	border-radius: 6px;
+}
+.note::after {
+	margin: 10px;
+	border: 1px solid;
+	border-radius: 6px;
+}
+.note.notice {
+	/*background-color: aliceblue;*/
+	background-color: azure;
+	color: blue;
+	text-shadow: 0.1em 0.1em 0.2em #ccc;
+}
+.note.warning {
+	/*background-color: orange;
+	color: yellow;*/
+	background-color: rgb(253,202,160);/*bisque;*//*lightsalmon;*/
+	color: crimson;/*yellow;*/
+	/*text-shadow: 0.1em 0.1em 0.2em red, -0.1em -0.1em 0.2em white*/
+	text-shadow: 0.1em 0.1em 0.2em yellow;
+}
+.note.error {
+	background-color: red;
+	color: yellow;
+	text-shadow: 0.1em 0.1em 0.2em darkred;
+}
+.note .title {
+	font-weight: bold;
+	margin: 1%;
+	padding: 5px;
+	text-align: center;
+	text-decoration: underline;
+	/*font-size: 15px;*/
+	font-size: large;
+}
+.note .message {
+/*	font-weight: bold;*/
+	margin: 10% 1% 0 1%;
+	padding: 5px;
+	/*font-size: 15px;*/
+}
+.note .btns {
+	margin: 10% 0 5% 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+.note .btns button {
+	color: black;
+	font-weight: bold;
+	padding: 4px;
+	font-size: 14px;
+	outline: 2px solid #777;
+	box-shadow: 2px 2px 6px #ccc;
+}
+.note .btns button:hover {
+	outline: 2px solid blue;
+	border-radius: 5px;
+	outline-offset: -5px;
+	box-shadow: none;
+}
+.note .ok,
+.note .ignore {
+	text-align: center;
+	border: 3px solid white;
+	border-radius: 6px;
+	min-width: 120px;
+}
+.note .ok:hover,
+.note .ignore:hover {
+	background-color: lightblue;
+}
+.note .ok {
+	background-color: beige;
+}
+.note .ignore:not(.ok) {
+	background-color: coral;
+	/*background-color: darkgray;*/
+}

@@ -1,0 +1,138 @@
+.pagination {
+	display: flex;
+	height: 2em;
+	width: 100%;
+	align-items: center;
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	background-color: antiquewhite;
+}
+.pagination button {
+/*	margin: 0.1em 0.5em;*/
+	/*padding: 0.25em 0.5em;*/
+	padding: 0.5em;
+	border: none;
+	width: 2.75em;
+}
+.pagination label {
+	font-weight: bold;
+/*	border-radius: 5px;*/
+	border: none;
+}
+.pagination .active {
+	background-color: gold;
+	color: darkred;
+}
+.pagination button:enabled:hover {
+	background-color: rgba(10, 10, 10, 0.25);
+}
+/*.pagination .first {
+}
+.pagination .previous {
+}
+.pagination .pagenum {
+}
+.pagination .next {
+}
+.pagination .last {
+}
+*/
+.pagination div.recordsPerPage {
+	position: absolute;
+	right: 0;
+	display: flex;
+}
+
+
+.table-actions {
+	display: flex;
+	vertical-align: middle;
+	height: 2.75em;
+	align-items: center;
+	background-color: beige;
+	bottom: 0;/*2em;*/
+}
+.table-actions a {
+	padding: 0 1em;
+/* margin: 0 1em; */
+}
+.table-actions .pre {
+	transform: rotate(180deg);
+	padding: 0 1em;
+}
+
+
+/*td, th {
+    white-space: normal; /* Only needed when it's set differntly somewhere else */
+/*    word-wrap: break-word;*/
+/*}*/
+/*table * {
+	width: 100% !important;
+}*/
+table {
+	width: 100% /*!important*/;
+/*	overflow-wrap: anywhere;*/
+/*	table-layout: fixed;*/
+/*	word-break: break-word;*/
+	display: table;
+/*	overflow: hidden;*/
+	word-break: break-all;
+}
+thead {
+	display: table-header-group;
+}
+tfoot {
+	display: table-footer-group;
+}
+tr {
+	display: table-row;
+}
+td {
+	display: table-cell;
+}
+thead, tbody, tfoot {
+	/*white-space: nowrap;*/
+}
+thead, tfoot {
+	text-align: center;
+	vertical-align: middle;
+}
+thead tr {
+	top: 0;
+}
+/*tfoot tr {
+	bottom: 0;
+}*/
+thead tr, tfoot tr {
+	background-color: ghostwhite;
+	height: 2.5em;
+}
+tbody tr:nth-child(1) {
+	border-top: 1px solid #ccc;
+}
+tbody tr {
+	/*border-top: 1px solid #ccc;*/
+	border-bottom: 1px solid #ccc;
+}
+thead th {
+/*tbody td + td {*/
+	border-left: 1px solid #ddd;
+	/*border-right: 1px solid #ddd;*/
+}
+thead tr th, tfoot tr th {
+	text-transform: uppercase;
+	text-align: center;
+}
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+label {
+	display: block;
+/*	cursor: text;*/
+/*	cursor: default;*/
+	cursor: cell;
+}

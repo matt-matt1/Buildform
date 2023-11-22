@@ -1,0 +1,116 @@
+/***** Internet Explorer *****/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.browser-ie-10-and-up {
+	}
+}
+@media screen and (min-width: 640px), screen\9 {
+	.browser-ie6_7-9-or-10 {
+	}
+}
+@media screen\9 {
+	.browser-ie6_or_7 {
+	}
+}
+@media \0screen {
+	.browser-ie8 {
+	}
+}
+@media screen and (min-width:0\0){
+	.browser-ie9-or-10 {
+	}
+}
+
+/***** Microsoft Edge *****/
+@supports (-ms-ime-align: auto) {
+	.browser-ms-edge {
+	}
+}
+
+/***** Firefox *****/
+@-moz-document url-prefix() {
+	.browser-mozilla-firefox {
+	}
+}
+/* or */
+@supports (-moz-appearance:none) {
+	.browser-firefox {
+	}
+}
+body:empty .browser-firefox-1-dot-5-and-2 {}
+body:last-child .browser-firefox-greater-than-2, x:-moz-any-link {}
+body:last-child .browser-firefox-greater-than-3, x:-moz-any-link, x:default {}
+body:not(:-moz-handler-blocked) .browser-firefox-greater-than-3-dot-5 {}
+_::-moz-progress-bar, body:last-child .browser-firefox-greater-than-6 {}
+_::-moz-range-track, body:last-child .browser-firefox-greater-than-21 ()
+_:-moz-tree-row(hover), .browser-firefox-all {}
+
+/***** Safari *****/
+@media not all and (min-resolution: 0.001dpcm) {
+	.browser-safari {
+	}
+}
+@media not all and (min-resolution:.001dpcm) {
+@supports (-webkit-appearance:none) and (stroke-color:transparent) {
+	.browser-safari-11-and-up {
+	}
+}
+}
+@media not all and (min-resolution:.001dpcm) {
+@supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+	.browser-safari-10-dot-1 {
+	}
+}
+}
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+@media {
+	.browser-safari-6-dot-1-to-10-dot-0 {
+	}
+}
+}
+@media screen and (min-width:0\0) {
+	.browser-safari-4 {
+	}
+}
+@media screen {
+@media (min-width: 0px) {
+	.browser-safari-6-and-up {
+	}
+}
+}
+html:first-child .browser-safari-2 {
+}
+html[xmlns*=""] body:last-child .browser-safari-2-or-3,
+html[xmlns*=""]:root .browser-safari-2-or-3 {
+}
+*|html[xmlns*=""] .browser-safari-2-and-3-dot-1 {
+}
+_::-moz-svg-foreign-content, :root .browser-safari-5-dot-1-and-6 {
+}
+/***** Chrominum *****/
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+	.browser-chrominum:not(*:root) {
+	}
+}
+
+/***** Chrome *****/
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+	.browser-chrome29-and-above {
+	}
+}
+@media screen and(-webkit-min-device-pixel-ratio:0) {
+	.browser-chrome-22-upto-28 {
+		-chrome-:only (;
+			property:value;
+		);
+	}
+}
+
+/***** common *****/
+@media and (-webkit-min-device-pixel-ratio:0) {
+	.browser-chrome-safari-edge-and-firefox {
+	}
+}
+
+/***** Opera *****/
+_:-o-prefocus, body:last-child .browser-opera-greater-than-9-dot-5 {}

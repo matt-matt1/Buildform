@@ -1,0 +1,32 @@
+/* headings */
+h1/*, h2*/ {
+	text-align: center;
+}
+h3 {
+	font-weight: normal;
+	text-decoration: underline;
+	margin-bottom: 1em;
+}
+/*h1:after, h2:after, h3:after {
+	clear: both;
+}*/
+summary {
+	outline: 0;
+	border-bottom: 1px solid orange;
+}
+.highlight::after {
+	content: '"';
+}
+.highlight::before {
+	content: '"';
+}
+.highlight {
+	background-color: yellow;
+	padding: 0 0.1em;
+	font-size: inherit;
+}
+hr {
+	width: 90%;
+	color: #777 !important;
+	margin: 1rem auto !important;
+}

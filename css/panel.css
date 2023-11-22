@@ -1,0 +1,53 @@
+/*#home .panel {*/
+.panel {
+/*	min-width: 350px;*/
+	min-height: 100px;
+/*	background-color: aliceblue;*/
+/*	border: 1px solid grey;*/
+	border-radius: 4px;
+	padding: 25px;
+	margin: 2em 0 5em 0;
+/*	box-shadow: 0 0 25px 5px #eee;*/
+/*	display: inline-flex;*/
+/*	margin-top: 2em;*/
+}
+.panel:not(.nobackground):not(.novisual) {
+	background-color: aliceblue;
+}
+.panel:not(.noborder):not(.novisual) {
+	border: 1px solid grey;
+}
+.panel:not(.noshadow):not(.novisual) {
+	box-shadow: 0 0 25px 5px #eee;
+}
+/*#home .panel .pane {*/
+.panel .pane {
+/*	resize: horizontal;*/
+	/*overflow: auto;*/
+/*	overflow: hidden;*/
+	/*justify-content: space-around;*/
+	justify-content: space-between;
+}
+/*#home .panel .gutter {*/
+.panel .gutter {
+	border-right: 1px solid #ddd;
+	margin: 0 20px;
+	padding: 10px;
+	text-align: center;
+}
+#home #pane1,
+#home #pane2 {
+	min-width: 100px;
+}
+.pane {
+	margin: 0 20px 0 20px;
+}
+.fadeonhover {
+	-webkit-transition: .4s ease-in-out opacity;
+    -moz-transition: .4s ease-in-out opacity;
+    -o-transition: .4s ease-in-out opacity;
+    transition: .4s ease-in-out opacity;
+}
+.fadeonhover:hover {
+	opacity: 0.8;
+}

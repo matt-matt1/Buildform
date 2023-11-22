@@ -1,0 +1,90 @@
+/* button symbols */
+.head > a.symbol {
+	display: none;
+/*	float: right;*/
+	margin: 0 10px 0 10px;
+}
+.head:hover > a.symbol {
+	display: inline;
+}
+.symbol {
+	font-size: 18px;
+	text-decoration: none;
+}
+.symbol.dbs, .symbol.dbtabs {
+	color: goldenrod;
+}
+.symbol.db {
+	color: black;
+}
+.symbol.dbtab {
+	color: #444;
+}
+.symbol.dbcol {
+	color: #ccc;
+	cursor: move;
+}
+tr:hover td a .symbol.dbcol {
+	font-style: italic;
+	color: grey;
+}
+.symbol.delete {
+	color: red;
+	float: right;
+}
+.symbol.add {
+	color: darkblue;
+}
+.symbol.edit, .symbol.home {
+	color: blue;
+}
+.symbol.view {
+	color: green;
+}
+.btn {
+	border: 1px solid #333;
+	padding: 1px 6px;
+	background-image: linear-gradient(white, lightgrey);
+	border-radius: 5px;
+	margin-right: 4px;
+}
+a .symbol:hover {
+	color: cyan;
+}
+.symbol.dbs:after/*, .dbtabs:after*/ {
+	/*content: '/2609';*/
+	content: '\276E';
+	/*content: '≣';*//*\2263*/
+}
+.symbol.db:after {
+	content: '\2752';
+}
+.symbol.dbtab:after {
+	/*content: '\2636';*/
+	/*content: '\2685';*/
+	content: '⊞';/*\229E*/
+}
+.symbol.dbcol:after {
+	/*content: '\27A2';*/
+	content: '\268C';
+	/*content: '\2251';*/
+	/*content: 'Î';*//*\00CE*/
+}
+.symbol.delete:after {
+	content: '\2718';
+}
+.symbol.add:after {
+	content: '\271A';
+}
+.symbol.edit:after {
+	content: '\270E';
+}
+.symbol.view:after {
+	content: '\26AF';
+}
+.symbol.dbtabs:after {
+	content: '\276F';
+}
+.symbol.home:after {
+	content: '\290A';
+}

@@ -1,0 +1,19 @@
+.dragging {
+	/*cursor: copy;*/
+/*	cursor: grabbing;*/
+}
+.drag.place {
+	cursor: crosshair;
+}
+.drag.no {
+	cursor: no-drop;
+}
+.up-down {
+	cursor: ns-resize;
+}
+.can-drag {
+	cursor: move;
+}
+/**[draggable]:not(.resize) {
+	cursor: move;
+}*/

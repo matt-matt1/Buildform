@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*#business-search-form:before,*/ .overlay {
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+	z-index:1;
+	transition: all 300ms ease;
+}
+/*.container .autocomplete:focus ~ .overlay {
+ background-color: rgba(0,0,0,0.8);
+}*/
+
+fieldset/*.main-fieldset*/ {
+	position: relative;
+}
+button[type="submit"][id^="add-"], #admin-button/*, #add-contact, #add-business, #manage-users, #add-user*//*, .addButton {
+button[id^="add"],
+.adminButton*/ {
+	position: absolute;
+/*	margin-top: 0.75em;
+	padding: 0.5em 1.5em;*/
+	right: 1em;
+}
+button[type="button"].adminButton/*, button[type="button"]#add-business/*, button[type="button"]#add-contact*/, button[type="button"][id^="add-"] {
+	top: 0.5em;
+}
+button[type="submit"].adminButton/*, button[type="submit"]#add-business, button[type="submit"]#add-contact*/, button[type="submit"][id^="add-"] {
+	top: -1.85em;
+}
+/*#add-business {
+	color: blue;
+}
+#add-contact {
+	color: purple;
+}*/
+.contact {
+	padding: 0.5em;
+}
+.contact:hover {
+	background-color: beige;
+}
+.deleteMe {
+/*	display: flex;
+	justify-content: center;*/
+	/*position: absolute;*/
+
+/*	border-radius: 1em;
+	background-color: red;
+	color: #fff;*/
+	padding: 0.25em 1.25em;
+/*	text-orientation: upright;
+	writing-mode: vertical-lr;
+	width: 3.25em;*/
+/*	word-break: break-all;*/
+	float: right;
+	margin-right: 1em;
+}
+fieldset > fieldset {
+/*	padding: 0.5em;*/
+	margin: 0.5em;
+}
+fieldset btn:hover {
+/*.addButton:hover {*/
+	color: gold;
+}
+fieldset .btn {
+	transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	-webkit-transition-delay: 0s;
+}
+
+.panel >form.table-form {
+	box-shadow: 0 0 10px #ddd;
+}
+
+
+.shadow-trial {
+	box-shadow:
+10px 10px 0px -3px rgba(255, 255, 255),
+10px 10px rgba(0, 0, 0, 0.4),
+20px 20px 0px -3px rgba(255, 255, 255),
+20px 20px rgba(0, 0, 0, 0.3),
+30px 30px 0px -3px rgba(255, 255, 255),
+30px 30px rgba(0, 0, 0, 0.2),
+40px 40px 0px -3px rgba(255, 255, 255),
+40px 40px rgba(0, 0, 0, 0.1),
+50px 50px 0px -3px rgba(255, 255, 255),
+50px 50px rgba(0, 0, 0, 0.05);
+}
+
+:root {
+	--tab-active-bg: aliceblue;
+	--tab-active-color: none;
+	--tab-active-point-bg: dodgerblue/*cornflowerblue*/;
+	--tab-active-point-border-bg: #111;
+	--tab-active-point-border-width: 29px;
+	--tab-active-border-color: #111;
+	--tab-active-border-bottom-color: #111;
+	--tab-inactive-bg: #eee;
+	--tab-inactive-color: #999;
+	--tab-inactive-bg-hover: #ddd;
+	--tab-inactive-color-hover: none;
+	--tab-inactive-border-color: #bbb;
+	--tabs-border-color: #111;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link/*, .nav-item .active*/ {
+	background-color: var(--tab-active-bg, aliceblue) !important;
+	color: var(--tab-active-color, #fff) !important;
+	cursor: auto;
+	position: relative;
+}
+.nav-tabs .nav-item .active::after {
+	content: '';
+	position: absolute;
+	left: calc(50% - var(--tab-active-point-border-width, 20px));
+	top: 100%;
+	width: 0;
+	height: 0;
+	border-left: var(--tab-active-point-border-width, 20px) solid transparent;
+	border-right: var(--tab-active-point-border-width, 20px) solid transparent;
+	border-top: var(--tab-active-point-border-width, 20px) solid var(--tab-active-point-bg, #e8e8e8);
+	clear: both;
+/*	transition: ease-in all 1s;*/
+}
+.nav-tabs .nav-item .active::before {
+	--width: calc(var(--tab-active-point-border-width, 20px) + 1px);
+	content: '';
+	position: absolute;
+	left: calc(50% - var(--width, 21px));
+	top: 100%;
+	width: 0;
+	height: 0;
+	opacity: 1;
+	animation: none;
+	margin: 0;
+	border-radius: 0;
+	border: none;
+	border-left: var(--width, 21px) solid transparent;
+	border-right: var(--width, 21px) solid transparent;
+	border-top: var(--width, 21px) solid var(--tab-active-point-border-bg, red);/*#e8e8e8);*/
+	clear: both;
+	/*transition: ease-in all 1s;*/
+}
+.nav-tabs .nav-link:not(.active) {
+	background-color: var(--tab-inactive-bg, #eee);
+	color: var(--tab-inactive-color, #fff);
+	border-color: var(--tab-inactive-border-color, #dee2e6);
+	-moz-box-shadow: 1px 1px 2px #fff inset;
+	-webkit-box-shadow: 1px 1px 2px #fff inset;
+	box-shadow: 1px 1px 2px #fff inset;
+}
+.nav-tabs .nav-link:not(.active):hover {
+	background-color: var(--tab-inactive-bg-hover, #ddd);
+	color: var(--tab-inactive-color-hover, #fff);
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: var(--tab-active-color, #495057);
+	background-color: var(--tab-active-bg, #fff);
+	border-color: var(--tab-active-border-color, #dee2e6) var(--tab-active-border-color, #dee2e6) var(--tab-active-border-bottom-color, transparent);
+	-moz-box-shadow: 1px 1px 2px #fff inset;
+	-webkit-box-shadow: 1px 1px 2px #fff inset;
+	box-shadow: 1px 1px 2px #fff inset;
+}
+.nav-tabs {
+	border-bottom: 1px solid var(--tabs-border-color, #dee2e6);
+}
+/*.nav-tabs .nav-item.show .nav-link,*/ .nav-tabs .nav-link {
+	background: linear-gradient(rgba(255,255,255,0.1), rgba(0,0,0,0.1))
+}

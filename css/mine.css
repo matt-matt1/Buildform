@@ -1,0 +1,102 @@
+
+* {
+	margin: 0;
+	-webkit-font-smoothing: antialiased!important;
+	text-rendering: optimizelegibility!important;
+}
+/*body {
+	background-color: #eee;
+	font: 14px Arial;
+	flex-wrap: wrap;
+}*/
+html {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+/*	-webkit-transform: translate3d(0, 0, 0);*/
+	scroll-behavior: smooth;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+@-ms-viewport {
+	width: device-width;
+}
+.my_sticky_top {
+/*	position: fixed;*/
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	padding: 0;
+	width: 100%;
+	z-index: 1000
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {		/* IE10+ CSS */
+	.my_sticky_top {
+/*	.sticky-top {*/
+		position: fixed;
+	}
+	.my_sticky_top + .container {
+/*	.sticky-top + .container {*/
+		margin-top: 3em;
+	}
+}
+.banner {
+	text-align: center;
+    background-color: antiquewhite;
+    padding: 0.5em 0em 0em 0em;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px yellow;
+    border-bottom: 1px solid #000;
+    font-size: 1.1em;
+/*	width: 100%;
+	z-index: 10;*/
+	height: 2.5em;
+	/*position: fixed;*/
+/*	position: absolute;*/
+/*	top: 0px;
+	left: 0px;
+	right: 100%;
+	bottom: 100%;*/
+}
+a:link {
+	text-decoration: none;
+}
+a.ib {
+	display: inline-block;
+}
+/*a:link:not(.ib):not(.head)*/ .symbol > a:not(.ib), td > a:not(.ib) {
+	display: block;
+}
+a:hover:not(.symbol):not(.double-size) {
+	text-decoration: underline;
+}
+a:link, a:visited {
+	color: blue;
+}
+.right {
+	float: right;
+}
+.hidden {
+	display: none;
+}
+.this-page {
+	font-size: 2em;
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.align-center {
+	display: flex;
+	justify-content: center;
+}
+.align-end {
+	display: flex;
+	justify-content: flex-end;
+}
+.inner-nav {
+	padding: 1em;
+	border: 1px solid #777;
+	border-radius: 6px;
+}

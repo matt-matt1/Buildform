@@ -1,0 +1,162 @@
+.breadcrumbs {
+	width: 100%
+}
+.breadcrumb.wizard {
+	--bs-breadcrumb-divider: '';
+	/*box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);*/
+/*	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.135);*/
+	border-radius: 5px;
+	margin-bottom: 0 !important;
+    padding: 0px;
+	background: #D4D4D4;
+	list-style: none;
+	overflow: hidden;
+/*    margin-top: 20px;*/
+/*  font-size: 10px;*/
+	width: 100%;
+}
+.breadcrumb.wizard>li+li:before {
+	padding: 0;
+}
+.breadcrumb.wizard li {
+	float: left;
+	height: 2.75em;
+}
+.breadcrumb.wizard li.active a {
+	background: brown;                   /* fallback color */
+	background: #ffc107 ;
+}
+.breadcrumb.wizard li.completed a {
+	background: brown;                   /* fallback color */
+	background: hsla(153, 57%, 51%, 1);
+}
+.breadcrumb.wizard li.active a:after {
+	border-left: 30px solid #ffc107;
+}
+.breadcrumb.wizard li.completed a:after {
+	border-left: 30px solid hsla(153, 57%, 51%, 1);
+}
+
+.breadcrumb.wizard li:not(.right) > span {
+	/*color: white;*/
+	color: blue;
+/*	font-size: 14px;*/
+	text-decoration: none;
+	padding: 10px 0 10px 45px;
+	position: relative;
+	display: block;
+	float: left;
+/*	background: #666;
+	background: linear-gradient(#666, #333);*/
+}
+.breadcrumb.wizard li:not(.right) > a {
+	/*color: white;*/
+	color: #333;
+	outline: none;
+/*	font-size: 14px;*/
+	text-decoration: none;
+	padding: 10px 0 10px 45px;
+	position: relative;
+	display: block;
+	float: left;
+/*	background: #666;
+	background: linear-gradient(#666, #333);*/
+}
+.breadcrumb.wizard li a:after {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+/*	border-top-color: #333;*/
+	border-bottom: 50px solid transparent;
+/*	border-bottom-color: #333;*/
+	border-left: 30px solid hsla(0, 0%, 83%, 1);
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	left: 100%;
+	z-index: 2;
+/*	background: #666;
+	background: linear-gradient(135deg, #666, #333);*/
+/*	box-shadow: 2px 2px 5px red;*/
+}
+.breadcrumb.wizard li a:before {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	/*border-left: 30px solid white;*/
+	border-left: 30px solid;
+	border-left-color: #fff;
+	/*border-left-color: linear-gradient(#333, #000);*/
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1;
+}
+.breadcrumb.wizard li:first-child a {
+	padding-left: 15px;
+}
+.breadcrumb.wizard li/*:not(.right)*/ a:hover {
+	/*background: #ffc107  ;*/
+	background: gray;
+	color: #fff;
+/*	background: #333;*/
+/*	background: linear-gradient(#333, #000);*/
+}
+/*.breadcrumb.wizard li.right a:hover { background: #fff; }*/
+.breadcrumb.wizard li a:hover:after {
+	/*border-left-color: #ffc107   !important;*/
+	border-left-color: gray;
+/*	background: #333;*/
+/*	background: gray;*/
+/*	background: linear-gradient(135deg, #333, #000);*/
+/*	border-left-color: #333 !important;
+	border-left-color: linear-gradient(#333, #000) !important;*/
+}
+
+.breadcrumb.wizard .right {
+	position: absolute;
+	right: 0.75em;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.breadcrumb.wizard .right a {
+	padding: 0.6em 1em;
+	display: block;
+}
+.breadcrumb.wizard .fa-regular {
+	/*padding: 10px 1em;*/
+	padding: 1em 1em 0.75em 1em;
+/*	height: 100%;*/
+}
+
+
+.breadcrumbs2 {
+	/*box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);*/
+/*	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.135);*/
+	border-radius: 5px;
+	margin-bottom: 0 !important;
+    padding: 0px;
+	background: #D4D4D4;
+	list-style: none;
+	overflow: hidden;
+/*    margin-top: 20px;*/
+/*  font-size: 10px;*/
+	height: 2.75em;
+	width: 100%;
+	align-items: center;
+	margin-top: -0.9em;
+	padding-right: 1em;
+}
+.breadcrumbs2 a:not(:hover) {
+	border-top: 4px solid transparent;
+}
+.breadcrumbs2 a:hover {
+	border-top: 4px solid grey;
+}

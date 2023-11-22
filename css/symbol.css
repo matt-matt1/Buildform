@@ -1,0 +1,191 @@
+/* button symbols */
+.head > a.symbol {
+	display: none;
+/*	float: right;*/
+	margin: 0 10px 0 10px;
+}
+.head:hover > a.symbol {
+	display: inline;
+}
+.symbol {
+	font-size: 18px;
+	text-decoration: none;
+/*	padding-top: 0.2em;
+	padding-bottom: 0;*/
+	margin-right: 10px;/*1em;*/
+	outline: none;
+	border: none;
+}
+table a > span.symbol {
+	background-color: #ddd;
+	border-radius: 50%;
+	padding: 0.3em 0.7em;
+/*	border: 1px solid #aaa;*/
+	width: 2em;
+	height: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-box-shadow: 0px 0px 6px 1px #ddd;
+	-moz-box-shadow: 0px 0px 6px 1px #ddd;
+	-ms-box-shadow: 0px 0px 6px 1px #ddd;
+	-o-box-shadow: 0px 0px 6px 1px #ddd;
+	box-shadow: 0px 0px 6px 1px #ddd;
+	transition: all .3s ease;
+	-moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+table a > span.symbol:hover {
+	background-color: yellow;
+}
+.symbol.dbs, .symbol.dbtabs, .symbol.col {
+	color: goldenrod;
+}
+.symbol.db {
+	color: black;
+}
+.symbol.dbfrm {
+	color: #444;
+}
+.symbol.dbtab {
+	color: #444;
+}
+.symbol.dbcol {
+	color: #ccc;
+	/*cursor: move;*/
+}
+/*.row > .symbol > a {
+	width: 1em;
+}*/
+td.symbol {
+	width: 20px;/*2em;*/
+}
+tr:hover td a .symbol.dbcol {
+	font-style: italic;
+	color: grey;
+}
+.symbol.delete {
+	color: red;
+	float: right;
+	margin-left: 10px;/*1em;*/
+}
+.symbol.add {
+	color: darkblue;
+}
+.symbol.edit, .symbol.home {
+	color: blue;
+}
+.symbol.view {
+	color: green;
+}
+.btn {
+	min-height: 1.85em;
+	transition: all .4s ease;
+	-moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+	-webkit-transition: all .4s ease;
+	transition-delay: 1s;
+	-moz-transition-delay: 1s;
+    -o-transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+}
+.rbtn {
+	border: 1px solid #333;
+	padding: 1px 6px;
+	background-image: linear-gradient(white, lightcoral);
+	border-radius: 5px;
+	margin-right: 4px;
+}
+.rbtn:hover,
+.rbtn:active {
+	background-image: linear-gradient(lightcoral, white);
+}
+.gbtn {
+	border: 1px solid #333;
+	padding: 1px 7px;
+	background-image: linear-gradient(white, lightgrey);
+	border-radius: 5px;
+	margin-right: 4px;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	-moz-box-shadow: 0 0 5px #aaa;
+	-ms-box-shadow: 0 0 5px #aaa;
+	-o-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+}
+.gbtn:hover,
+.gbtn:active {
+	background-image: linear-gradient(lightgrey, white);
+}
+a .symbol:hover, a .symbol:active {
+	color: cyan;
+}
+.symbol.dbs:after/*, .dbtabs:after*/ {
+	/*content: '/2609';*/
+	content: '\276E';
+	/*content: '≣';*//*\2263*/
+}
+.symbol.db:after {
+	content: '\2752';
+}
+.symbol.xcol:after {
+	/*content: '‖';*//*\2016*/
+	content: 'Ⅲ';/*\2162*/
+}
+.symbol.dbfrm:after {
+	/*content: '\2636';*/
+	/*content: '\2685';*/
+	content: '⊞';/*\229E*/
+}
+.symbol.dbtab:after {
+	/*content: '\2636';*/
+	/*content: '\2685';*/
+	content: '⊞';/*\229E*/
+}
+.symbol.dbcol:after {
+	/*content: '\27A2';*/
+	content: '\268C';
+	/*content: '\2251';*/
+	/*content: 'Î';*//*\00CE*/
+}
+.symbol.delete:after {
+	content: '\2718';
+}
+.symbol.add:after {
+	content: '\271A';
+}
+.symbol.edit:after {
+	content: '\270E';
+}
+.symbol.view:after {
+	content: '\26AF';
+}
+.symbol.dbtabs:after {
+	content: '\276F';
+}
+.symbol.home:after {
+	/*content: '⟰'; \27F0 */
+	/*content: '⤊' / *\290A* /;*/
+	/*content: '⥣' / *\2963* /;*/
+	content: '' /*\f015*/;
+}
+.symbol.ret:before {
+	content: /*RIGHT ARROW WITH HOOK*/'↪'/*U+021AA,UNICODE,&#x21aa;,HEX CODE,&#8618;,HTML CODE,&rarrhk;HTML ENTITY,\21AA*/;
+	padding-right: 0.5em;
+}
+.symbol.sett:before {
+	content: '⚙'/*UNICODEU+02699 HEX CODE&#x2699; HTML CODE&#9881; CSS CODE\2699*/;
+	padding-right: 0.5em;
+}
+.symbol.more:after {
+/*	content: '∴';*/ /* U+02234 UNICODE &#x2234; HEX CODE &#8756; HTML CODE &there4; HTML ENTITY \2234 */
+	/*content: '≋';*/ /* U+0224B UNICODE &#x224B; HEX CODE &#8779; HTML CODE &apid; HTML ENTITY \224B */
+	content: '⋯'; /* U+022EF UNICODE &#x22EF; HEX CODE &#8943; HTML CODE &ctdot; HTML ENTITY \22EF */
+	font-size: 1.5em;
+/*	position: relative;
+	top: -0.075em;
+	left: 0;*/
+}
+.double-size {
+	font-size: 2em;
+}
