@@ -1,5 +1,6 @@
 <?php
 namespace Yuma\HTML;
+use \ReturnTypeWillChange;
 
 //use Yuma;
 /**
@@ -537,7 +538,7 @@ final class Hook implements \Iterator, \ArrayAccess {
 	 * @return array Of callbacks at current priority.
 	 */
 	#[ReturnTypeWillChange]
-	public function current()
+	public function current(): mixed
 	{
 		return current( $this->callbacks );
 	}
@@ -552,6 +553,7 @@ final class Hook implements \Iterator, \ArrayAccess {
 	 * @return array Of callbacks at next priority.
 	 */
 	#[ReturnTypeWillChange]
+    //#[\ReturnTypeWillChange]
 	public function next()
 	{
 		return next( $this->callbacks );

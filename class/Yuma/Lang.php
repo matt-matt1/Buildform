@@ -173,8 +173,10 @@ class Lang
 			} catch (Exception $e) {
 				error_log ($pre. $log);
 			}
-		$parts = explode(';', $lng);			// ignore semi-colon and after
-		$lang = $parts[0];
+            if (!empty($lng)) {
+                $parts = explode(';', $lng);            // ignore semi-colon and after
+                $lang = $parts[0];
+            }
 		if (!empty($lang)) {
 			return $this->componentize($lang);		// separate into class variables
 		}

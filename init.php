@@ -1,6 +1,8 @@
 <?php
 
 namespace Yuma;
+//use const Yuma\WRITE_LOG_FILE;
+use const \WRITE_LOG_FILE;
 use function \str_ends_with;
 
 //	defined('ABS_PATH') || (header("HTTP/1.1 403 Forbidden") & die('403.14 - Directory listing denied.'));
@@ -74,7 +76,7 @@ ini_set( 'log_errors', defined('WRITE_LOG') ? WRITE_LOG : TRUE );
 $pre = 'init ';
 fixServerValues();
 if (defined('WRITE_LOG') && WRITE_LOG ) {
-	ini_set( 'error_log', __DIR__. DIRECTORY_SEPARATOR. (defined('WRITE_LOG_FILE') && is_readable(\WRITE_LOG_FILE) ?\ WRITE_LOG_FILE : 'log/error.log') );
+	ini_set( 'error_log', __DIR__. DIRECTORY_SEPARATOR. (defined('WRITE_LOG_FILE') && is_readable(WRITE_LOG_FILE) ? WRITE_LOG_FILE : 'log/error.log') );
 	require 'class/Yuma/Logger.php';
 	$log = '-----';
 	try {

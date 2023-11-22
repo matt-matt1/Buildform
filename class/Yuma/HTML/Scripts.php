@@ -318,7 +318,7 @@ final class Scripts //extends Depends
         unset ($deps[$key]);
     }
 
-    private function flattern (&$deps, &$out = array(), $head) {
+    private function flattern (&$deps, &$out = array(), $head=null) {
         foreach ($deps as $key => $value) {
             empty ($value) ? $this->_unset ($key, $deps, $out, $head) : $this->flattern ($deps[$key], $out, $head);
         }
